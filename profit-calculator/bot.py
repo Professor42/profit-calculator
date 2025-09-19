@@ -12,11 +12,10 @@ class FeeCalculator:
         self.platforms = {
             'ebay': {
                 'name': 'eBay',
-                'final_value_fee': 0.1295,
-                'paypal_fee': 0.0349,
-                'paypal_fixed': 0.49,
-                'shipping': 15.00,
-                'packaging': 2.00
+                'final_value_fee': 0.1325,
+                'paypal_fee': 0.029,
+                'paypal_fixed': 0.30,
+                'shipping': 0,
             },
             'stockx': {
                 'name': 'StockX',
@@ -306,3 +305,4 @@ async def help_command(ctx):
 if __name__ == "__main__":
     TOKEN = os.environ.get('DISCORD_TOKEN')
     bot.run(TOKEN)
+
