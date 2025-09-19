@@ -21,7 +21,7 @@ class FeeCalculator:
                 'name': 'StockX',
                 'transaction_fee': 0.095,
                 'payment_fee': 0.03,
-                'shipping': 13.95,
+                'shipping': 0.00,
                 'packaging': 0.00
             },
             'goat': {
@@ -29,7 +29,7 @@ class FeeCalculator:
                 'commission': 0.095,
                 'payment_fee': 0.029,
                 'payment_fixed': 0.30,
-                'shipping': 12.00,
+                'shipping': 0.00,
                 'packaging': 0.00
             },
             'mercari': {
@@ -37,8 +37,8 @@ class FeeCalculator:
                 'selling_fee': 0.10,
                 'payment_fee': 0.029,
                 'payment_fixed': 0.30,
-                'shipping': 11.50,
-                'packaging': 2.00
+                'shipping': 0.00,
+                'packaging': 0.00
             },
             'amazon_fba': {
                 'name': 'Amazon FBA',
@@ -305,4 +305,5 @@ async def help_command(ctx):
 if __name__ == "__main__":
     TOKEN = os.environ.get('DISCORD_TOKEN')
     bot.run(TOKEN)
+
 
